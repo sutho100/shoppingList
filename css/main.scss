@@ -1,0 +1,203 @@
+//variables
+
+$opensans:  'Open Sans', sans-serif;
+
+
+$grey: #828282;
+$red: #f51707;
+$white: #fff;
+$offwhite: #eeeeee;
+$black: #000;
+//styles
+#wrapper {
+  position: relative;
+  border-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+   margin-left: auto;
+   margin-right: auto;
+   background-image: url("img/grocery.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   min-height: 500px;
+   width: auto;
+}
+
+header {
+    height: 100px;
+    background-color: $grey;
+    padding-bottom: 25px;
+    opacity: 0.7;
+    
+
+    h1 {
+        padding-top: 25px;
+        margin: 0;
+        opacity: 1.0;
+        color: $black; 
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+
+    }
+}
+
+body {
+  }
+
+h1 {
+    text-align: center;
+}
+
+.one {
+   
+
+    .row {
+        padding-top: 25px;
+    }
+}
+
+table {
+    button {
+        width: 100%;
+    }
+    width: 100%;
+}
+
+td {
+    width: 100%;
+    padding: 5px;
+}
+
+.btn {
+    line-height: 1.5;
+}
+
+.toggleAll {
+    min-height: 45px;
+    button {
+        width: 50%;
+        float: right;
+    }
+}
+
+
+
+
+
+
+input {
+    background: $offwhite;
+    min-height: 100%;
+    padding: 4px 0;
+    margin-left: 10px;
+
+   &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    $black;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    $black;
+       opacity:  1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    $black;
+       opacity:  1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    $black;
+    }
+}
+
+ol {
+    float: right;
+    
+    li {
+        margin: 10px 0;
+        font-family: $opensans ;
+        font-weight: bold;
+        float: right;
+        clear: right;
+        font-size: 1.3em;
+        text-shadow: 2px 2px 1px #C4C4C4;
+
+        &:first-child {
+            display: none;
+        }
+    }
+
+}
+
+.deleteButton {
+        border: $red;
+        border-radius: 4px;
+        background-color: $red;
+        color: $white;
+        margin-left: 10px;
+       
+    &:hover,
+    &:active {
+         -webkit-box-shadow: 2px 2px 2px 2px $grey;
+        box-shadow: 2px 2px 2px 2px $grey;
+    }
+}
+
+
+.container_footer {
+  width: 100%;
+  height: auto; }
+  .container_footer .socialmedia {
+    text-align: right; }
+    .container_footer .socialmedia li {
+      display: inline-block;
+      padding: 20px; }
+  .container_footer ul {
+    list-style-type: none;
+    padding: 0 0 0 20px;
+    margin: 0; }
+    .container_footer ul li {
+      color: #fff;
+      padding: 15px 0; }
+      .container_footer ul li img {
+        width: 44px;
+        height: 44px; }
+
+footer {
+  min-height: 150px;
+  background-color: #333333;
+  position: relative; }
+
+
+@media (max-width: 991px) {
+    .toggleAll {
+        width: 100%;
+        button {
+            width: 50%;
+            float: left;
+        
+        }
+    }
+    ol {
+       
+        float: left;
+    
+    li {
+        
+    float: left;
+    clear: left;
+}
+        
+
+       }
+    .btn {
+        width: 100%;
+    }
+
+
+
+}

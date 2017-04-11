@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://hyperdev.com/favicon.ico" id="favicon" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+   <div id="wrapper" class="wrapper">
+        <header><h1>Shopping list</h1></header>
+        
+        <div class="container one">
+            <div class="row">
+                <div class="col-md-8 left">
+                    
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr class="add">
+                                <td><button class="btn btn-success" onclick="handlers.addTodo()" type="submit">Add</button></td>
+                                <td><input id="addTodoTextInput" placeholder="add to list..." type="text" required></td>
+                            </tr>
+                            <tr class="changeTodo">
+                                <td><button class="btn btn-success" onclick="handlers.changeTodo()" type="button">Change</button></td>
+                                <td><input id="changeTodoPositionInput" placeholder="change which one..." required="" type="number"></td>
+                                <td><input id="changeTodoTextInput" placeholder="replace with..." required="" type="text"></td>
+                            </tr>
+                            <tr class="toggleCompleted">
+                                <td><button class="btn btn-success" onclick="handlers.toggleCompleted()" type="button">Toggle Completed</button></td>
+                                <td><input id="toggleCompletedPositionInput" placeholder="which one..." required="" type="number"></td>
+                            </tr>
+                        </table>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="form">
+                        <div class="toggleAll">
+                            <button class="btn btn-primary" onclick="handlers.toggleAll()" type="button">Toggle All</button>
+                        </div>
+                       
+                    </div>
+                    <ol></ol>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <footer>
+        <div class="container_footer">
+            <div class="row">
+                <div class="col-xs-6">
+                    <ul>
+                        <li>
+                            <span>Mobile: +61 410636052</span>
+                        </li>
+                        <li>
+                            <span>Email: sutho100@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socialmedia">
+                    <div class="col-xs-6">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/todd-sutherland-722233120/" target="_blank">
+                                    <img class="footer_linkedin" src="img/linkedin.jpg" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="files/resume.pdf" target="_blank">
+                                    <img class="footer_resume" src="img/cv.jpg" alt="resume" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/jquery-3.2.0.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
